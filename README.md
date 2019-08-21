@@ -1,12 +1,13 @@
-# GitHub-Tutorial
+# DevTools
+![screenshot](screenshot.png)
 
-Hey! This for tutorial purpose.
+##GITHUB-TUTORIAL
 
 **Demo Session**
 
 | SL.NO | Topics | Comments |
 | --- | --- | --- |
 | 1 | About DevTools | founded by **technocrats** in **2011** , our goal is to promote *best of breeds* software |  
-| 1 | What is GITHUB | SERVICE |
-| 2 | WHY GITHUB? | Collaboration Communicate easily |
+| 2 | What is GITHUB | SERVICE |
+| 3 | WHY GITHUB? | Collaboration Communicate easily |
 
