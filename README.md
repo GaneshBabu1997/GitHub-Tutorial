@@ -6,6 +6,24 @@
 
 *DevOps Engineer*
 
+**Joined DevTools on July 1st 2018**
+
+*lead experts in : *
+
++ GitHub Enterprises
++ Atlassian Jira
++ Confluence
++ Jenkins
++ Dockers
++ Ansible
+
+*Upcoming skillsets*
+
++ Kubernetes
++ Splunk
++ AWS Architect
++ Bamboo
+
 *The future **SRE** and Commentator *
 
 
