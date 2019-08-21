@@ -3,5 +3,5 @@
 
 + Built in CI/CD
 
-![alt text]{http://picsum.photos/200/200)
+![alt text](http://picsum.photos/200/200)
 
