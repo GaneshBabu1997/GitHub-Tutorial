@@ -3,5 +3,5 @@
 
 + Built in CI/CD
 
-![alt text](https://developer.github.com/v3/users/)
+![alt text](https://developer.github.com/v3/users)
 
