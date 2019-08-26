@@ -35,10 +35,14 @@
     }
     async function createIssues() {
         clear();
+        const username = "GaneshBabu1997"
+        const password = "Ganesh@97"
+        const headers = {
+            "Authorization" : `Basic ${btoa(`${username}:${password}`)}`
         const url = "https://api.github.com/repos/GaneshBabu1997/GitHub-Tutorial/issues"
         
-        const headers = {
-            "Authorization" : `Token d53fa91795f31cdaf2edcecfced4895d5e3bc2f7`
+        /*const headers = {
+            "Authorization" : `Token d53fa91795f31cdaf2edcecfced4895d5e3bc2f7`*/
         }
         const payLoad = {
             title: "Hey my brand new issue!!!"
