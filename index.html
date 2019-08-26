@@ -48,8 +48,8 @@
             title: "Hey my brand new issue!!!"
         }
         const response = await fetch(url, {
-            method: "POST",
-            headers: headers,
+            "method": "POST",
+            "headers": headers,
             body: JSON.stringify(payLoad)
         })
         const result = await response.json()
