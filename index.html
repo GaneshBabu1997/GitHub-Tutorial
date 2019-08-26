@@ -38,7 +38,7 @@
         const url = "https://api.github.com/repos/GaneshBabu1997/GitHub-Tutorial/issues"
         
         const headers = {
-            "Authorization" : `Token 8509e50c40eaa7906cdde6e96029dba3a372be4f`
+            "Authorization" : `Token d53fa91795f31cdaf2edcecfced4895d5e3bc2f7`
         }
         const payLoad = {
             title: "Hey my brand new issue!!!"
@@ -59,7 +59,7 @@
     }
     async function getIssues() {
         clear();
-        const url = "https://api.github.com/search/issues?q=author:raisedadead repo:freecodecamp/freecodecamp type:issue"
+        const url = "https://api.github.com/search/issues?q=author:GaneshBabu1997 repo:GaneshBabu1997/GitHub-Tutorial type:issue"
         const response = await fetch(url)
         const result = await response.json()
         result.items.forEach(i=>{
@@ -82,10 +82,10 @@
         const headers = {
             "Authorization" : `Token 8509e50c40eaa7906cdde6e96029dba3a372be4f`
         }*/
-        const url = "https://api.github.com/search/issues?q=repo:GaneshBabu1997/GitHubprivate type:issue"
+        const url = "https://api.github.com/search/issues?q=repo:GaneshBabu1997/GitHub-Tutorial type:issue"
         const response = await fetch(url, {
-            "method": "GET",
-            "headers": headers
+             "method": "GET",
+             "headers": headers
         })
         const result = await response.json()
         result.items.forEach(i=>{
@@ -96,7 +96,7 @@
             divResult.appendChild(document.createElement("br"))
         })
     }
-    async function getCommits(url="https://api.github.com/search/commits?q=repo:freecodecamp/freecodecamp author-date:2019-03-01..2019-03-31") {
+    async function getCommits(url="https://api.github.com/search/commits?q=repo:GaneshBabu1997/GitHub-Tutorial author-date:2019-08-01..2019-08-31") {
         clear();
         
         const headers = {
@@ -106,7 +106,7 @@
             "method" : "GET",
             "headers" : headers
         })
-        //"<https://api.github.com/search/commits?q=repo%3Afreecodecamp%2Ffreecodecamp+author-date%3A2019-03-01..2019-03-31&page=2>; rel="next", <https://api.github.com/search/commits?q=repo%3Afreecodecamp%2Ffreecodecamp+author-date%3A2019-03-01..2019-03-31&page=27>; rel="last""
+        /*"<https://api.github.com/search/commits?q=repo%3Afreecodecamp%2Ffreecodecamp+author-date%3A2019-03-01..2019-03-31&page=2>; rel="next", <https://api.github.com/search/commits?q=repo%3Afreecodecamp%2Ffreecodecamp+author-date%3A2019-03-01..2019-03-31&page=27>; rel="last""*/
         const link = response.headers.get("link")
         const links = link.split(",")
         const urls = links.map(a=> {
@@ -123,7 +123,7 @@
             img.style.height="32px"
             const anchor = document.createElement("a")
             anchor.href = i.html_url;
-            anchor.textContent = i.commit.message.substr(0,120) + "...";
+            anchor.textContent = i.commit.message.substr(0,120) + "..."; /* to limit the description */
             divResult.appendChild(img)
             divResult.appendChild(anchor)
             divResult.appendChild(document.createElement("br"))
